@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Regular_Expression</title>
+	<meta charset="UTF-8">
+	<!-- Viewport -->
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<!-- External Style Sheet (Css)-->
+	<link rel ="stylesheet" type="text/css" href="bootstrap/css/bootstrap.css">
+	
+
+	<!-- External Thrid party Libaries(javascript) -->
+		<script type="text/javascript" src="bootstrap/js/jquery-3.1.1.min.js"></script>
+		<script type="text/javascript" src="bootstrap/js/bootstrap.js"></script>
+</head>
+<body>
+<div class="container">
+<div class="jumbotron">
+<form>
+<div>
+<label>Singel:</label><input type="text" pattern="[a-z]{3,7}">
+</div>
+<br>
+<div>
+<input type="submit">
+</div>
+</form>
+
+<h1>character classes </h1>
+
+<h2>A Word Character [\w]</h2>
+<ul>
+		<li>A-Z</li>
+		<li>a-z</li>
+		<li>0-9</li>
+		<li>_</li>
+</ul>
+
+<h2>A-non Word Character [\W]</h2>
+<ul>
+		<li>Special Symbols</li>
+</ul>
+
+<h2>[Only digits [0-9] \d]</h2>
+<ul>
+		<li>Numbers between 0-9 (no double digits and so on)</li>
+</ul>
+
+<h2>[except digits [0-9] \D]</h2>
+<ul>
+		<li>except numbers everything is accepted</li>
+</ul>
+
+<h2>[only characters[a-z or A-Z] ]</h2>
+<ul>
+		<li>only character is accepted</li>
+</ul>
+
+<h2>[except characters[^a-z or ^A-Z] ]</h2>
+<ul>
+		<li>except Characters everything is accepted</li>
+</ul>
+
+<h1>Quantifiers</h1>
+
+<h2>[sequence of characters[a-z or A-Z]* ]</h2>
+<ul>
+		<li>Only sequence of characters(Zero to more times)</li>
+</ul>
+<h2>[sequence of characters[a-z or A-Z]+ ]</h2>
+<ul>
+		<li>one or more times</li>
+</ul>
+
+<h2>[sequence of characters[a-z or A-Z]? ]</h2>
+<ul>
+		<li>once or not at all </li>
+</ul>
+
+<h2>[sequence of characters[a-z or A-Z]{n} ]</h2>
+<ul>
+		<li>exactly n times</li>
+</ul>
+
+<h2>[sequence of characters[a-z or A-Z]{n,} ]</h2>
+<ul>
+		<li>min n times and can have more time</li>
+</ul>
+
+<h2>[sequence of characters[a-z or A-Z]{n,m} ]</h2>
+<ul>
+		<li>must be between n and m</li>
+</ul>
+
+
+</div>
+</div>
+</body>
+</html>
